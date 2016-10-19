@@ -16,22 +16,21 @@ img {
   padding: -10px 0 0;
 }
 
-.Left {
+.left {
 background-color: #455A64;
 width: 50%;
 height: 100%;
 position: fixed;
-/*display: flex;*/
 text-align: center;
 }
 
-.Left input {
+.left input {
   width: 75%;
   height: 30px;
   margin: 20px 30px 10px;
 }
 
-.Left button {
+.left button {
   background-color: #FFC107;
   color: #FFFFFF;
   width: 75%;
@@ -39,39 +38,39 @@ text-align: center;
   margin: 10px 30px 100px;
 }
 
-.Left:hover {
+.left:hover {
   background-color: #FFD773
   color: #FFFFFF;
 }
 
-.Right {
+.right {
 background-color: #CFD8DC;
 width: 50%;
 height: 100%;
-position: absolute;
 right: 0;
+border: 1px solid #607D8B;
+background-color: #FFFFFF;
+width: 80%;
+height: 150px;
+margin: auto;
+top: 20px;
 }
 
-.card {
-  border: 1px solid #607D8B;
-  background-color: #FFFFFF;
-  width: 80%;
-  height: 150px;
-  position: relative;
-  margin: auto;
-  top: 20px;
+.right {
+
 }
 
 h2, h3 {
-  border-bottom: 2px solid #CFD8DC;
+  border-bottom: 1px solid #CFD8DC;
   width: 85%;
-  padding:15px;
-  margin: auto;
+  padding:10px;
+  margin: auto auto 7px;
 }
 
 h2 {
   color: #455A64;
   font-size: 32px;
+  font-weight: 600;
 }
 
 h3 {
@@ -79,11 +78,12 @@ h3 {
   font-size: 26px
 }
 
-.Right button {
+.right button {
   position: absolute;
   bottom: 0;
   margin: 3%;
   color: #455A64;
+  button-decoration: none;
 }
 
 .read {
