@@ -1,25 +1,32 @@
-
+body {
+  font-family: "Open Sans"
+}
 
 h1 {
+  font-weight: 800;
+  font-size: 90px;
 
 }
 
-.left {
+.Left {
+background-color: #455A64;
+width: 50%;
+position: fixed;
+}
+
+.Left input {
 
 }
 
-.left input {
+.Left button {
 
 }
 
-.left button {
-
+.Right {
+background-color:
+width: 50%;
 }
 
-.right {
-
-}
-
-.right button {
+.Right button {
 
 }
