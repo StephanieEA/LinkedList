@@ -6,7 +6,7 @@ h1 {
   font-weight: 800;
   font-size: 70px;
   color: #FFFFFF;
-  margin: 100px 30px 0;
+  margin: 200px 30px 0;
 }
 
 img {
@@ -23,6 +23,7 @@ position: fixed;
 
 .Left input {
   width: 75%;
+  height: 30px;
   margin: 20px 30px 10px;
 }
 
@@ -30,6 +31,7 @@ position: fixed;
   background-color: #FFC107;
   color: #FFFFFF;
   width: 75%;
+  height: 30px;
   margin: 10px 30px 100px;
 }
 
