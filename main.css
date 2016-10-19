@@ -1,1 +1,48 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 
+.left {
+  background-color: #455A64;
+  position:absolute;
+  left:0;
+  width:50%;
+  height:100%;
+  padding: 25vh 0;
+  text-align:center;
+}
+
+h1{
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 6vh;
+}
+.right {
+  background-color: #CFD8DC;
+  position: absolute;
+  right:0;
+  width:50%;
+  height: 100%;
+}
+
+.enter {
+  background-color: #FFC107;
+  color: #FFFFFF;
+  width: 80%;
+  height: 5%;
+  font-size: 100%;
+  font-weight: 800;
+}
+
+.enter:hover {
+  background-color: #FFD773;
+}
+
+input {
+  display: block;
+  margin: auto;
+  margin-bottom: 10%;
+  width: 80%;
+  height: 4%;
+  font-size: 100%;
+}
