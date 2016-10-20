@@ -1,23 +1,34 @@
 var enter = document.querySelector('.enter');
-var title = document.querySelector('.title');
-var url = document.querySelector('.url');
+var readButton = document.querySelector('.read');
+var deleteButton = document.querySelector('.delete');
 
-enter.addEventListener('click', function(event) {
+
+enter.addEventListener('click', function() {
+  var title = document.querySelector('.title');
+  var url = document.querySelector('.url');
   $('.right').append('<article class="card">'+
   '<h2>The Website Title</h2>'+
   '<h3>Website URL</h3>'+
   '<button class="read">Read</button>'+
   '<button class="delete">Delete</button>'+'</article>');
-  document.querySelector('title').innerText = title;
-  document.querySelector('url').innerText = url;
+  document.querySelector('h2').innerText = title.value;
+  document.querySelector('h3').innerText = url.href;
+  title.value = null;
+  url.value = null;
+
 })
 
-reset form and re-enter information
+readButton.addEventListener('click', function () {
+  $('.read').toggleClass('read');
+})
+
 
 //
+// document.querySelector('h2').innerText= function () {
+//   return title;
 // document.querySelector('h3').innerText = function () {
 //     return title;
-// // $('.title').show();
+// $('.title').show();
 
 
 
