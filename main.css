@@ -1,1 +1,98 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 
+.left {
+  background-color: #455A64;
+  position: fixed;
+  left:0;
+  width:50%;
+  height:100%;
+  padding: 25vh 0;
+  text-align:center;
+}
+
+h1{
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 6vh;
+  margin-bottom: 10%;
+}
+
+.logo {
+  width:10%;
+  height:10%;
+}
+
+.right {
+  background-color: #CFD8DC;
+  position: absolute;
+  right:0;
+  width:50%;
+  height: auto;
+}
+
+.enter {
+  background-color: #FFC107;
+  color: #FFFFFF;
+  width: 80%;
+  height: 5%;
+  font-size: 100%;
+  font-weight: 800;
+}
+
+.enter:hover {
+  background-color: #FFD773;
+}
+
+input {
+  display: block;
+  margin: auto;
+  margin-bottom: 10%;
+  width: 80%;
+  height: 4%;
+  font-size: 100%;
+}
+
+.card {
+  border: 2px solid #607D8B;
+  width: 80%;
+  position:relative;
+  margin: 5% auto;
+  height: 150px;
+  background-color: #FFFFFF;
+}
+
+h2, h3 {
+  border-bottom: 1px solid #CFD8DC;
+  text-align: center;
+  padding: 10px;
+  width: 85%;
+  margin: auto;
+}
+
+h2 {
+  font-size:32px;
+  color: #455A64;
+}
+h3 {
+  font-size: 26px;
+  color: #607D8B;
+}
+
+.read  {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 2% 2%;
+  color: #607D8B;
+}
+
+.delete {
+  position: absolute;
+  right:0;
+  bottom: 0;
+  margin: 2% 2%;
+  color: #607D8B;
+  text-decoration: none;
+}
