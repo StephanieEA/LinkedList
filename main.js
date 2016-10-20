@@ -1,12 +1,16 @@
 var enter = document.querySelector('.enter')
+var title = document.querySelector('.title')
+var url = document.querySelector('.url')
 
 enter.addEventListener('click', function(){
-$('.right').append('<article class="card"><h2>Website Title</h2>'+
-'<h3>Website URL</h3><button class="read">Read</button><button class="delete">Delete</button></article>')
-})
-
-enter.addEventListener('click', function(){
-
+$('.right').append('<article class="card">'+
+'<h2>Website Title</h2>'+
+'<h3>Website URL</h3>'+
+'<button class="read">Read</button>'+
+'<button class="delete">Delete</button>'+
+'</article>')
+document.querySelector('h2').innerText = title;
+document.querySelector('h3').innerText = url;
 
 })
 
