@@ -12,7 +12,7 @@ enter.addEventListener('click', function() {
   '<button class="read">Read</button>'+
   '<button class="delete">Delete</button>'+'</article>');
   document.querySelector('h2').innerText = title.value;
-  document.querySelector('h3').innerText = url.href;
+  document.querySelector('h3').innerText = url.link(URL);
   title.value = null;
   url.value = null;
 
