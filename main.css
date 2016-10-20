@@ -96,3 +96,40 @@ h3 {
   color: #607D8B;
   text-decoration: none;
 }
+
+.alreadyread {
+  backgound-color: F2F4F4;
+}
+
+.red {
+  background-color:F05A28;
+}
+
+@media screen and (max-width: 450px) {
+  .left {
+    position: fixed;
+    width: 100%;
+    height:30%;
+    padding: 15px;
+  }
+
+  .right {
+    width: 100%;
+    bottom: 0;
+  }
+
+/*  h1{
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 5vh;
+    margin-bottom: 5%;
+    position: absolute;
+    top:0;
+    padding: 15px;
+  }
+
+  .logo {
+    width:5%;
+    height:5%;
+  } */
+}

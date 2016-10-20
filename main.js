@@ -1,18 +1,29 @@
 var enter = document.querySelector('.enter')
-var title = document.querySelector('.title')
-var url = document.querySelector('.url')
+var readButton = document.querySelector('.read')
 
 enter.addEventListener('click', function(){
-$('.right').append('<article class="card">'+
+  var title = document.querySelector('.title');
+  var url = document.querySelector('.url');
+$('.right').append('<article class="card alreadyread">'+
 '<h2>Website Title</h2>'+
 '<h3>Website URL</h3>'+
-'<button class="read">Read</button>'+
+'<button class="read red">Read</button>'+
 '<button class="delete">Delete</button>'+
-'</article>')
-document.querySelector('h2').innerText = title;
-document.querySelector('h3').innerText = url;
+'</article>');
+document.querySelector('h2').innerText = title.value;
+document.querySelector('h3').innerText = url.uri;
+
+title.value=null;
+url.value=null;
 
 })
+
+readButton.addEventListener('click', function(){
+  toggleClass(.red)
+})
+/*readButton.addEventListener('click', function (){
+  $('.read')toggleClass('read');
+}*/
 
 
 //function Bookmark (card) {
