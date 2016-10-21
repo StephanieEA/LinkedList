@@ -97,13 +97,13 @@ h3 {
   text-decoration: none;
 }
 
-.alreadyread {
+/*.alreadyread {
   backgound-color: F2F4F4;
 }
 
 .red {
   background-color:F05A28;
-}
+}*/
 
 @media screen and (max-width: 450px) {
   .left {
