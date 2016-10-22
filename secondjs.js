@@ -14,7 +14,11 @@ enter.addEventListener('click', function() {
   '<button class="read">Read</button>'+
   '<button class="delete">Delete</button>'+'</article>');
   $('h2').text(title.value);
-  $('h3').text(url.value);
+  $('h3').html(url.value);
   title.value = null;
   url.value = null;
+})
+
+$('.read').on('click', function () {
+  $('.card').css('background-color', #F2F4F4);
 })
