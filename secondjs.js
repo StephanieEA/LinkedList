@@ -17,8 +17,11 @@ enter.addEventListener('click', function() {
   $('h3').html(url.value);
   title.value = null;
   url.value = null;
-})
-
-$('.read').on('click', function () {
-  $('.card').css('background-color', #F2F4F4);
+  $('.read').on('click', function() {
+    $('.card').css('background-color', '#F2F4F4');
+    $('.read').css('color', "#F05A28");
+  });
+  $('.delete').on('click', function() {
+    $('.card').remove();
+  })
 })
