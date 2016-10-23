@@ -87,7 +87,16 @@ h3 {
   margin: 2% 2%;
   color: #607D8B;
   background-color: none;
-  text-decoration-color: #455A64;
+  text-decoration: #455A64;
+}
+
+.alreadyread {
+  color: #F05A28;
+  font-weight: 800;
+}
+
+.darkercard {
+  background-color: #F2F4F4;
 }
 
 .delete {
@@ -99,15 +108,22 @@ h3 {
   text-decoration: none;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
+  body {
+    position: relative;
+    height: 100%;
+  }
+
   .left {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height:30%;
+    top: 0;
     padding: 15px;
   }
 
   .right {
     width: 100%;
     bottom: 0;
+    position: absolute;
   }
