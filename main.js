@@ -5,8 +5,6 @@ enter.addEventListener('click', function(){
   var url = document.querySelector('.url');
   var right = document.querySelector('.right')
   var newCard = document.createElement('article');
-  var readButton = document.querySelector('.read')
-  var deleteButton = document.querySelector('.delete')
 
   newCard.className = 'card';
   newCard.innerHTML = '<h2>Website Title</h2>'+
@@ -22,35 +20,12 @@ enter.addEventListener('click', function(){
   title.value=null;
   url.value=null;
 
-  $('.read').on('click', function () {
-  $(this).toggleClass('alreadyread');
-  $(this).parent().toggleClass('darkercard')
-  })
+    $('.read').on('click', function () {
+        $(this).toggleClass('alreadyread');
+        $(this).parent().toggleClass('darkercard')
+    })
 
-  $('.delete').on('click', function() {
-  $(this).parent().remove();
-  })
+    $('.delete').on('click', function() {
+      $(this).parent().remove();
+    })
 })
-
-
-//function Bookmark (card) {
-//     this.title = title;
-//     this.url = url;
-//   }
-//
-// Bookmark.prototype.create() = function () {
-//   var title = document.querySelector(".title");
-//   var url = document.querySelector(".url");
-//   var enter = document.querySelector(".enter");
-//   var right = document.querySelector(".right");
-//
-//   enter.addEventListener('click', function () {
-//     h2.innerText = title.value;
-//     h3.innerText = url.value;
-//     })
-//   }
-//
-// function Card (title, url) {
-//     this.title = title;
-//     this.url = url;
-// }
