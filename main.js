@@ -1,13 +1,12 @@
 var enter = document.querySelector('.enter');
-var readButton = document.querySelector('.read')
-//var newCard = ...
 
 enter.addEventListener('click', function(){
   var title = document.querySelector('.title');
   var url = document.querySelector('.url');
   var right = document.querySelector('.right')
   var newCard = document.createElement('article');
-
+  var readButton = document.querySelector('.read')
+  var deleteButton = document.querySelector('.delete')
 
   newCard.className = 'card';
   newCard.innerHTML = '<h2>Website Title</h2>'+
@@ -17,21 +16,19 @@ enter.addEventListener('click', function(){
   '</article>';
   newCard.querySelector('h2').innerText = title.value;
   newCard.querySelector('h3').innerText = url.value;
+
   right.appendChild(newCard);
-  // $('h2').text(title.value);
-  // $('h3').text(url.value);
 
-    title.value=null;
-    url.value=null;
-
+  title.value=null;
+  url.value=null;
 
   $('.read').on('click', function () {
-    $('.read').toggleClass('alreadyread');
-    $('.card').toggleClass('darkercard')
+  $(this).toggleClass('alreadyread');
+  $(this).parent().toggleClass('darkercard')
   })
 
   $('.delete').on('click', function() {
-  $('.card').remove();
+  $(this).parent().remove();
   })
 })
 
