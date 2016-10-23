@@ -8,18 +8,20 @@ var deleteButton = document.querySelector('.delete');
 enter.addEventListener('click', function() {
   var title = document.querySelector('.title');
   var url = document.querySelector('.url');
-  $('.right').append('<article class="card">'+
+  $('.right').append('<article class="card darkercard">'+
   '<h2>The Website Title</h2>'+
   '<h3>Website URL</h3>'+
-  '<button class="read">Read</button>'+
+  '<button class="read alreadyread">Read</button>'+
   '<button class="delete">Delete</button>'+'</article>');
   $('h2').text(title.value);
   $('h3').html(url.value);
   title.value = null;
   url.value = null;
   $('.read').on('click', function() {
-    $('.card').css('background-color', '#F2F4F4');
-    $('.read').css('color', "#F05A28");
+    $('.read').toggleClass('alreadyread');
+    $('.card').toggleClass('darkercard');
+    // $('.card').css('background-color', '#F2F4F4');
+    // $('.read').css('color', "#F05A28");
   });
   $('.delete').on('click', function() {
     $('.card').remove();
