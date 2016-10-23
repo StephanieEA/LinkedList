@@ -5,17 +5,17 @@ var readButton = document.querySelector('.read')
 enter.addEventListener('click', function(){
   var title = document.querySelector('.title');
   var url = document.querySelector('.url');
-  var right = document.querySelector('.parent')
+  var right = document.querySelector('.right')
   var newCard = document.createElement('article');
 
+
   newCard.className = 'card';
-  right.appendChild(newCard);
-  $('newCard').append('<article class="card alreadyread">'+
-  '<h2>Website Title</h2>'+
+  newCard.innerHTML = '<h2>Website Title</h2>'+
   '<h3>Website URL</h3>'+
   '<button class="read">Read</button>'+
   '<button class="delete">Delete</button>'+
-  '</article>')
+  '</article>'
+  right.appendChild(newCard);
 
   // $('.right').append('<article class="card alreadyread">'+
   // '<h2>Website Title</h2>'+
@@ -23,8 +23,8 @@ enter.addEventListener('click', function(){
   // '<button class="read">Read</button>'+
   // '<button class="delete">Delete</button>'+
   // '</article>');
-//  $('h2').text(title.value);
-//  $('h3').text(url.value);
+// $('h2').text(title.value);
+// $('h3').text(url.value);
 document.querySelector('h2').innerText = title.value;
 document.querySelector('h3').innerText = url.value;
   title.value=null;
@@ -39,13 +39,6 @@ document.querySelector('h3').innerText = url.value;
   $('.card').remove();
   })
 })
-
-
-
-// readButton.addEventListener('click', function(){
-//   .read.toggleClass('read')
-//   newCard.toggleClass(.alreadyread)
-//})
 
 
 //function Bookmark (card) {
