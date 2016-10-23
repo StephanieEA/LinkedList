@@ -97,12 +97,12 @@ h3 {
   text-decoration: none;
 }
 
-.alreadyread {
-  backgound-color: F2F4F4;
+.darkercard {
+  background-color: #F2F4F4;
 }
 
-.red {
-  background-color:F05A28;
+.alreadyread {
+  color: #F05A28;
 }
 
 @media screen and (max-width: 450px) {
@@ -110,26 +110,27 @@ h3 {
     position: fixed;
     width: 100%;
     height:30%;
-    padding: 15px;
+    padding:0;
+    top: 0;
   }
 
   .right {
     width: 100%;
+    height: 70%;
     bottom: 0;
   }
 
-/*  h1{
-    color: #FFFFFF;
-    font-weight: 800;
-    font-size: 5vh;
-    margin-bottom: 5%;
-    position: absolute;
-    top:0;
-    padding: 15px;
+  .title, .url, .enter {
+    width: 250px;
+    height:20px;
+    margin-bottom: 10px;
   }
 
-  .logo {
-    width:5%;
-    height:5%;
-  } */
-}
+  .enter {
+    height: 30px;
+  }
+
+  h1 {
+    margin-bottom: 15px;
+    padding-top: 5px;
+  }
