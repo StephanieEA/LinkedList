@@ -117,36 +117,20 @@ h3 {
   .right {
     width: 100%;
     height: 70%;
-    position:absolute;
-    bottom:0;
+    bottom: 0;
   }
 
   .title, .url, .enter {
     width: 250px;
     height:20px;
     margin-bottom: 10px;
-}
+  }
+
   .enter {
     height: 30px;
-  }
   }
 
   h1 {
     margin-bottom: 15px;
     padding-top: 5px;
   }
-/*  h1{
-    color: #FFFFFF;
-    font-weight: 800;
-    font-size: 5vh;
-    margin-bottom: 5%;
-    position: absolute;
-    top:0;
-    padding: 15px;
-  }
-
-  .logo {
-    width:5%;
-    height:5%;
-  } */
-}
